@@ -15,7 +15,7 @@ log:
     maxAge: 30 # 旧文件最多保存几天
     compress: false #是否压缩/归档旧文件
 mysql:
-  enable: false
+  enable: true
   host: 127.0.0.1
   port: 3306
   user: root
@@ -50,7 +50,7 @@ redis:
   dialTimeout: 5s #redis连接超时时间.默认5s
 elastic:
   # 是否开启
-  enable: true
+  enable: false
   # 服务地址，多个地址用逗号隔开
   url: http://127.0.0.1:9200
   # 是否转换请求地址，默认为true,当等于true时 请求http://ip:port/_nodes/http，将其返回的url作为请求路径

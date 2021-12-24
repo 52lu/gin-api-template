@@ -9,7 +9,7 @@ import (
 )
 
 // ViperInit 初始化viper配置解析包，函数可接受命令行参数
-func InitConfig() {
+func InitViperConfig() {
 	var configFile string
 	// 读取配置文件优先级: 命令行 > 默认值
 	flag.StringVar(&configFile,"c",global.ConfigFile,"配置配置")
